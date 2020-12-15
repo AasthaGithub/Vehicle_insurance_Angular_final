@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+
+    <title> Basic Tags </title>
+
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+
+</head>
+
+<body>
+<div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+
+        <div id="example1" style="color:rgb(6, 134, 151)">
+            <h3>Submitted Claims</h3>
+        </div><br>
+
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Request_Number</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Requested Amount</th>
+                    <th scope="col">Reason</th>
+                    <th scope="col">Click To Approve/Decline</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let e of claimList" [class.myClass]="isClicked">
+                
+                  <td> {{e.request_Num}} </td>
+                  <td> {{e.claimDate}} </td>                 
+                  <td> {{e.approvStatus}} </td>
+                  <td> {{e.reqAmt}} </td>
+                  <td> {{e.reason}} </td>
+                  <td>
+                        <button  [disabled]="clicked"  class="btn btn-warning" style="margin-left: 20px" (click)="approveClaim(e.request_Num)" >Approve</button>
+                  </td>
+                  <td>
+                        <button  [disabled]="clicked"  class="btn btn-warning" style="margin-left: 20px"  (click)="declineClaim(e.request_Num)" (click)="isClicked = !isClicked">Decline</button>
+                  </td>
+              </tr>
+          </tbody>
+        </table>
+    </div>
+    <div class="col-md-3"></div>
+</div>
+</body>
+
+</html>

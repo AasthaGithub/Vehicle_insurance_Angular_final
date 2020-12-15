@@ -1,0 +1,34 @@
+<section id="home" class="home-section bottom-margin">
+    <div class="user-home-cover">
+        <div class="home-content-box">
+            <div class="home-content-box-inner">
+                <div class="row">
+                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-4">
+                        <h3>LOGIN</h3>
+                        <form [formGroup]="loginform" (ngSubmit)="checkLogin()">
+                            <label class="label-name"></label>
+                                <input type="email" formControlName="useremail" placeholder="Enter Email" class="form-control"/>
+                            <label class="label-name"></label>
+                                <input type="password" formControlName="userpswd" placeholder="Enter Password" class="form-control" />
+                            <div class="btn">
+                                <button class="btn btn-general btn-blue">LOGIN</button>
+                            </div>
+                        </form>
+                        <div class="bottom-margin">
+                            <a href="" >Forget Password?</a>
+                        </div>
+                        <div>
+                            <button class="btn btn-blue">SIGN UP</button>
+                        </div>
+                    </div> 
+                    <div class="col-md-4">
+                    </div>  
+                </div>              
+            </div>
+        </div>
+    </div>
+</section>
+
+   

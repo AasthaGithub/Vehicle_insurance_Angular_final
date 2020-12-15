@@ -1,0 +1,148 @@
+body{
+	margin:0px;
+	padding:0px;
+	overflow-x: hidden;
+}
+.backgroundimg{
+	width:100%;
+	height:100%;
+	background-repeat: repeat-y;
+	background:rgba(0,0,0,0.8);
+}
+
+.nav_bar{
+	width: 100%;
+	height:900px;
+	top:0px;
+	left:0px;
+	position: absolute;
+	background:rgba(0,0,0,0.25);
+}
+.nav_item{
+	float: right;
+	color: white;
+	text-align: center;
+	display: inline;
+	border: 1px solid black;
+	border-radius: 40px;
+	outline: none;
+	padding: 16px 20px;
+	text-decoration: none;
+	background:rgba(0,0,0,0.5);
+	font-size: 16px;
+	margin-left: 20px;
+	margin-top: 10px;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url("inkscreen.ttf");
+}
+
+.inkscreen{	
+	top:55px;
+	left:480px;
+	color:#3f85c1;
+	color:#167e9e;
+	font-size:95px;
+	text-shadow: 4px 4px black;
+	position: absolute;
+	font-family: myFirstFont;
+}
+
+.login-box{
+	width:550px;
+	height:400px;
+	background-color: white;
+	top:220px;
+	left:400px;
+	position:absolute;
+	box-sizing:border-box;
+	padding: 25px;
+	border:2px solid #d6d4d4; 
+	border-radius: 6px;
+}
+
+h1{
+	text-align: center;
+	font-size: 35px;
+	font-family: sans-serif;
+	color:black;
+}
+
+.login-box input{
+	width: 400px;
+	height:40px;
+	top:20px;
+	position: relative;
+	border:2px solid #d6d4d4; 
+	border-radius: 3px;
+	margin-left:40px;
+	margin-bottom:30px;
+	padding-left: 10px;
+	font-size:20px;
+	background-color: rgb(252, 255, 253);
+}
+
+.login-box input::placeholder{
+	font-size:20px;
+	font-family: sans-serif;
+	text-align: 20px;
+}
+
+.login-box input[type="submit"]{
+	text-align: center;
+	width:100px;
+	height:40px;
+	margin-left: 190px;
+	position: relative;
+	background:#167e9e;
+	border-radius: 5px;
+	border:1px solid black;
+}
+
+.login-box a{
+		font-size:20px;
+		margin-left: 40px;
+		color:black;
+		position: relative;		
+}
+
+.footer{
+	width: 100%;
+	height:80px;
+	top:800px;
+	left:0px;
+	position: absolute;
+	background:linear-gradient(transparent,black);
+}
+
+.footer li{
+	color: white;
+	display: inline;
+	outline: none;
+	padding: 16px 20px;
+	text-decoration: none;
+	font-size: 30px;
+	margin-top: 10px;
+}
+
+.about{
+	left:375px;
+	position: absolute;
+}
+
+.contact{
+	left:550px;
+	position: absolute;
+}
+
+.services{
+	left:725px;
+	position: absolute;
+}
+
+.policy{
+	left:900px;
+	position: absolute;
+}

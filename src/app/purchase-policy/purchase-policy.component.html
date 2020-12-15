@@ -1,0 +1,46 @@
+<section id="home" class="home-section bottom-margin">
+    <div class="user-home-cover">
+        <div class="home-content-box">
+            <div class="home-content-box-inner">
+                <div class="row">
+                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-4">
+                        <form [formGroup]="buyinsurance" name = "buyform" (ngSubmit)="addVehicle(addVehicle)">
+                            <div class="d-flex justify-content-around">
+                                <div class="form-check">
+                                    <input type="radio" class="form-check-input"  formControlName="vehicleType" value="2W" required>
+                                    <label class="form-check-label">2 Wheeler</label>
+                                </div>
+                                <div class="form-check">
+                                    <input type="radio" class="form-check-input" formControlName="vehicleType" value="4W">
+                                    <label class="form-check-label">4 Wheeler</label>
+                                </div>
+                            </div>
+                            <label class="label-name text-heading-blue" >Model</label>
+                        <input type="text" formControlName="model" placeholder="Model" class="form-control">
+                        <label class="label-name text-heading-blue" >Manufacturer</label>
+                        <input type="text" formControlName="manufact"  placeholder="Manufacturer" class="form-control">
+                        <label class="label-name text-heading-blue" >Purchase Date</label>
+                        <input type="date" formControlName="purchaseDate"  placeholder="Date" class="form-control">
+                        <label class="label-name text-heading-blue" >Driving License</label>
+                        <input type="text" formControlName="license"  placeholder="Driving License" class="form-control">
+                        <label class="label-name text-heading-blue" >Registration Number</label>
+                        <input type="text" formControlName="regNum"  placeholder="Registration Number" class="form-control">
+                        <label class="label-name text-heading-blue" >Engine Number</label>
+                        <input type="text" formControlName="engNo"  placeholder="Engine Number" class="form-control">
+                        <label class="label-name text-heading-blue" >Chassis Number</label>
+                        <input type="text" formControlName="chassisNo" class="form-control" placeholder="Chassis Number">
+                        <div class="btn">
+                            <button class="btn btn-lg btn-general btn-blue">SUBMIT</button>
+                        </div>
+                        
+                        </form>
+                        </div>
+                    <div class="col-md-4">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,39 @@
+<section id="home" class="home-section">
+            <div class="user-home-cover">
+                <div class="home-content-box">
+                    <div class="home-content-box-inner">
+                        <div class="container-fluid">
+                            <div class="col-md-4">
+                            </div>
+                            <div class="col-md-4">
+                                <table class="table table-striped table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Ids</th>
+                                            <th>Plan Type</th>
+                                            <th>Vehicle Type</th>
+                                            <th>Amount</th>
+                                            <th>Update</th>
+                                            <th>Delete</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr *ngFor="let plan of planList">
+                                            <td> {{plan.planId}} </td>
+                                            <td>{{plan.planType}}</td>
+                                            <td>{{plan.vehicleType}}</td>
+                                            <td>{{plan.planAmt}}</td>
+                                            <td><button>Update</button></td>
+                                            <td><button>Delete</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <button class="btn">Add New Plan</button>
+                            </div>
+                            <div class="col-md-4">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>

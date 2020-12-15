@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>Home Page</title>
+        <link rel="stylesheet" href="D:/templates/vendors/bootstrap/css/bootstrap.min.css">
+        
+        <link rel="stylesheet" href="style1.css">
+    </head>
+    <body>
+        <nav class=" navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                  <div class="row">
+                  <div class="col-md-4">
+                    <a href="#" class="navbar-brand"><img src="../assets/logo-1.jpg" alt="wg-logo" class="img-responsive"></a>
+                  </div>
+                  <div class="col-md-4" style="margin-top:15px; text-align: center;">
+                    <span>GENERAL INSURANCE</span>
+                  </div>
+                  <div class="col-md-4" style="margin-top:10px; text-align: right;">
+                    <button>LOGOUT</button>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 btn-navigation" style="text-align: center;">
+                      <button class="btn-navigation">ADD POLICY</button>
+                    </div>
+                    <div class="col-md-6 btn-navigation" style="text-align: center;">
+                        <button class="btn-navigation">CHECK CLAIM</button>
+                      </div>
+                </div>
+          </div>
+        </nav>
+
+        <section id="home" class="home-section">
+            <div class="user-home-cover">
+                <div class="home-content-box">
+                    <div class="home-content-box-inner">
+                            <div class="col-md-3">
+                            </div>
+                            <div class="col-md-6">
+                                <form action="#" role="form" class="form-group form-horizontal">
+                                    <label class="label-name text-heading-blue" style="float: left;">Policy Number</label>
+                                    <input type="text" name="policyNumber" readonly placeholder="Policy Number" class="form-control field-disable">
+                                    <label class="label-name text-heading-blue" style="float: left;">Vehicle Number</label>
+                                    <input type="text" name="vehicleNumber" readonly placeholder="Vehicle Number" class="form-control field-disable">
+                                    <label class="label-name text-heading-blue" style="float: left;">Registration Number</label>
+                                    <input type="text" name="regNumber" readonly placeholder="Registration Number" class="form-control field-disable">
+                                    <label class="label-name text-heading-blue" style="float: left;">Claim Amount</label>
+                                    <input type="text" name="claimAmount" readonly placeholder="Claim Amount" class="form-control field-disable">
+                                    <div class="btn">
+                                        <a href="#" class="btn btn-lg btn-general btn-blue" role="button">Claim</a>
+                                    </div><!--.send-btn-->
+                                    <div class="btn">
+                                        <a href="#" class="btn btn-lg btn-general btn-blue" role="button">Renew</a>
+                                    </div><!--.send-btn-->
+                                </form>
+                            </div> 
+                            <div class="col-md-3">
+                            </div>                
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="copyrights">
+                    <div class="row ">
+                        <div class="copyrights">
+                            <p>Copyrights @ Four Square Insurance,2018</p>
+                        </div><!--.col-md-6-->
+                    </div><!--.row-->
+            </div><!--copyrights-->
+        </footer>
+    </body>
+    <script src="D:/templates/vendors/jquery/jQuery-3.3.1-min.js"></script>
+    <script src="D:/templates/vendors/bootstrap/js/bootstrap.min.js"></script>
+</html>

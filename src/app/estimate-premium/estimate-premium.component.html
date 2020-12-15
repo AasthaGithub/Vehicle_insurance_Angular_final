@@ -1,0 +1,36 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4 ">
+            <form name="estimate_form">
+                <p>Please select :</p>
+                <input type="radio" id="2 wheeler" name="vehicle_type" value="2W" checked="checked" [(ngModel)]="vehicle_type_for_list">
+                <label for="2 wheeler">2 wheeler</label>
+                <input type="radio" id="4 wheeler" name="vehicle_type" value="4W" [(ngModel)]="vehicle_type_for_list">
+                <label for="4 wheeler">4 wheeler</label><br>
+                <button (click)="reloadVehicleList()">Confirm Preference</button>
+                <div class="form-group">
+                    <label for="model">Vehicle Model</label>
+                    <select [(ngModel)]="v_name" name="v_name">
+                        <option [value]="v_name" *ngFor="let v_name of vehicle_list_returned">{{v_name}}</option>
+                    </select>
+                    <div>
+                        <label for="v_age">Vehicle Age</label>
+                        <input type="number" name="v_age" class="form-control" id="v_age" placeholder="Enter Vehicle Age (in years)" [(ngModel)]="v_age" /><br>
+                    </div>
+                    <div>
+                        <input type="radio" id="third_party" name="plan_type_name" value="Third Party" checked="checked" [(ngModel)]="plan_type">
+                        <label for="third_party">Third Party</label>
+                        <input type="radio" id="comprehensive" name="plan_type_name" value="Comprehensive" [(ngModel)]="plan_type">
+                        <label for="comprehensive">Comprehensive</label><br>
+                        <button (click)="reloadVehicleList()">Confirm PlanType</button>
+                    </div>
+                    <button type="submit" class="btn btn-primary" (click)="onSubmitEstimatePremium()">Calculate Premium</button>
+        
+                </div>
+                <div>Calculated premium is: {{estimated_premium}} </div>
+            </form>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</div>

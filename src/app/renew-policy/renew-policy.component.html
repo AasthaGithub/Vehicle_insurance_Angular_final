@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+
+<head>
+    <title>Insurance Renew Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+
+<div class="w3-container">
+    <h2>Insurance Renew Page</h2>
+    <button onclick="document.getElementById('id01').style.display='block'"
+        class="w3-button w3-green w3-large">Renew</button>
+
+    <div id="id01" class="w3-modal">
+        <div class="w3-modal-content w3-card-4 w3-animate-zoom" style="max-width:600px">
+            <form class="w3-container" [formGroup]="updatePolicyGroup" name = "registerform"(ngSubmit)="updatePolicy()">>
+                <div class="w3-section">
+                    <label><b>Policy Number</b></label>
+                    <input formControlName="policyNum" class="w3-input w3-border w3-margin-bottom" type="text"
+                        placeholder="Enter Policy Number" name="policyNum" required>
+
+                    <label class="label-name text-heading-blue" >New End Date</label>
+                    <input formControlName="endDate" type="date" min="16/12/2021" class="form-control" placeholder="Date"
+                        class="form-control">
+
+                    <button class="w3-button w3-block w3-green w3-section w3-padding" (click)="updatePolicy()"
+                        type="submit">Renew</button>
+                    <input class="w3-check w3-margin-top" type="checkbox" checked="checked"> Confirm
+                </div>
+            </form>
+
+            <div class="w3-container w3-border-top w3-padding-16 w3-light-grey">
+                <button onclick="document.getElementById('id01').style.display='none'" type="button"
+                    class="w3-button w3-red">Cancel</button>
+
+            </div>
+
+        </div>
+    </div>
+</div>

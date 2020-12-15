@@ -1,0 +1,27 @@
+<div class="row">
+    <div class="col-md-4"></div>
+    <div class="col-md-4 ">
+        <form [formGroup]="choosePlan" (ngSubmit)="add()">
+            <label>Select Vehicle Plan Type</label>
+                <div class="d-flex justify-content-around">
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input"  formControlName="pType" value="Third Party" required>
+                        <label class="form-check-label">Third-Party</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="radio" class="form-check-input" formControlName="pType" value="Comprehensive">
+                        <label class="form-check-label">Comprehensive</label>
+                    </div>
+                </div>
+                <label class="label-name">Period(in years)</label>
+                <input type="number" formControlName="period" class="form-control" placeholder="Enter Period in years" required>
+                <label class="label-name">Start Date</label>
+                <input type="date" formControlName="startDate" class="form-control" value="2020-12-16"> 
+                <label class="label-name">End Date</label>
+                <input type="date" step=365 min="2021-12-16" formControlName="endDate" class="form-control"> 
+            <button (click)="addPolicy()" class="btn btn-primary">Set Plan</button>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <div class="col-md-4"></div>
+</div>

@@ -1,0 +1,36 @@
+        <section id="home" class="home-section bottom-margin">
+            <div class="user-home-cover">
+                <div class="home-content-box">
+                    <div class="home-content-box-inner">
+                        <div class="row">
+                            <div class="col-md-4">
+                            </div>
+                            <div class="col-md-4">
+                                <form [formGroup]="adduserform" name = "registerform"(ngSubmit)="addUser(addUser)">
+                                        <label class="label-name text-heading-blue" >Name</label>
+                                    <input type="text" formControlName="username" placeholder="Full Name" class="form-control">
+                                    <label class="label-name text-heading-blue" >Email</label>
+                                    <input type="email" formControlName="useremail"  placeholder="Email" class="form-control">
+                                    <label class="label-name text-heading-blue" >Date of Birth</label>
+                                    <input type="date" formControlName="userDob"  placeholder="Date" class="form-control">
+                                    <label class="label-name text-heading-blue" >Mobile Number</label>
+                                    <input type="number" formControlName="phone"  placeholder="Mobile Number" class="form-control">
+                                    <label class="label-name text-heading-blue" >Address</label>
+                                    <input type="text" formControlName="useraddr"  placeholder="Address" class="form-control">
+                                    <label class="label-name text-heading-blue" >Password</label>
+                                    <input type="password" formControlName="userpswd"  placeholder="Password" class="form-control">
+                                    <label class="label-name text-heading-blue" >Confirm Password</label>
+                                    <input type="password" formControlName="confirmpswd" class="form-control" placeholder="Confirm Password">
+                                    <div class="btn">
+                                        <button class="btn btn-lg btn-general btn-blue">SUBMIT</button>
+                                    </div>
+                                    
+                                </form>
+                            </div> 
+                            <div class="col-md-4">
+                            </div>  
+                        </div>              
+                    </div>
+                </div>
+            </div>
+        </section>

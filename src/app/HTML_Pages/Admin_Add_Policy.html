@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>	
+
+	
+<html>			
+	<head>	
+
+    <title> Basic Tags </title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	</head>
+	<body>
+
+        <div class="col-md-4 col-md-offset-4">
+
+            <div class="jumbotron" style="color:rgb(6, 134, 151)">
+                <h3>Add New Plan</h3>      
+            </div>
+
+            <form>
+
+                <div class="form-group">
+                    <select class="form-control" required>
+                        <option selected>Select Vehicle Type</option>  
+                       
+                        <option value="1">Honda 4W</option>
+                        <option value="2">Honda 2W</option>
+                      </select>                   
+                </div>
+
+                <div class="form-group">       
+                    <p class="h4 mb-4"> Select Vehicle Plan Type</p>
+
+                    <div class="d-flex justify-content-around">
+
+                      <div class="form-check">
+                        <input type="radio" class="form-check-input" id="tp" name="same" required>
+                        <label class="form-check-label" >Third-Party</label>
+                      </div>
+
+                      <div class="form-check">
+                        <input type="radio" class="form-check-input" id="com" name="same" >
+                        <label class="form-check-label" >Comprehensive</label>
+                      </div>
+
+                    </div>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="inputamt">Amount</label>
+                    <input type="number" class="form-control" id="inputamt" placeholder="Enter Amount"  required>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+              
+
+        </div>
+	</body>
+</html>

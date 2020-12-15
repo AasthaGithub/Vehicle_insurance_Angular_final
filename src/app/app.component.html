@@ -1,0 +1,28 @@
+
+        <nav class=" navbar navbar-inverse navbar-fixed-top">
+          <div class="container-fluid">
+              <div class="col-md-4">
+                  <a href="#" [routerLink]="['']" class="navbar-brand"><img src="https://github.com/AasthaGithub/TestGit/blob/master/images/vehicle_logo.png?raw=true" alt="wg-logo" class="img-responsive"></a>
+              </div>
+              <div class="col-md-4" style="margin-top:10px; text-align: center;">
+                  <span>GENERAL INSURANCE</span>
+              </div>
+              <div class="col-md-4" style="margin-top:10px; text-align: right; float: right;">
+                <button [routerLink]="['register']" style="margin-right: 10px;">REGISTER</button>
+                <button [routerLink]="['login']" >LOGIN</button>
+              </div>
+          </div>
+        </nav>
+
+        <router-outlet></router-outlet>
+
+        <footer>
+            <div class="copyrights">
+                    <div class="row ">
+                        <div class="copyrights">
+                            <p>Copyrights @ Four Square Insurance,2018</p>
+                        </div>
+                    </div><!--.row-->
+            </div><!--copyrights-->
+        </footer>
+
